@@ -23,6 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          npm install -g nodemon
           npm install
 
       - name: "Deploy autochalit to Azure Web App"
