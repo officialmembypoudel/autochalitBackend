@@ -23,7 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install
+          npm install --save-dev nodemon
 
       - name: "Deploy autochalit to Azure Web App"
         id: deploy-to-webapp
