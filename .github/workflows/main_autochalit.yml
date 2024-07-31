@@ -25,14 +25,14 @@ jobs:
         run: |
           npm install
 
-       - name: "Deploy to Azure Web App"
+      - name: "Deploy autochalit to Azure Web App"
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
           app-name: "autochalit"
           slot-name: "Production"
-          package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_86AABF78924C4A1F9E95E7DDC7648FDA }}
+          package: .
 
   # deploy:
   #   runs-on: ubuntu-latest
