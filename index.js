@@ -1,6 +1,6 @@
 import http from "http";
 import { app } from "./app.js";
-import { WebSocketServer } from "ws";
+import { WebSocketServer, WebSocket } from "ws";
 import { connectDatabase } from "./configs/db.js";
 import { Gadget } from "./models/gadgets.js";
 import { messageHandler } from "./messageHandler.js";
