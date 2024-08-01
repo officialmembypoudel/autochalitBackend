@@ -32,7 +32,7 @@ connectDatabase();
 //   },
 // ]);
 
-const wss = new WebSocketServer({ server, port: 8080 });
+const wss = new WebSocketServer({ server });
 
 wss.on("connection", (ws) => {
   console.log("Client connected");
@@ -55,6 +55,6 @@ wss.on("connection", (ws) => {
   //   ws.send("Hello, I am a WebSocket server");
 });
 
-server.listen(4000, () => {
+server.listen(443, () => {
   console.log("Server is running on http://localhost:4000");
 });
