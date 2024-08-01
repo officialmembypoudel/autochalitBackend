@@ -32,7 +32,7 @@ connectDatabase();
 //   },
 // ]);
 
-const wss = new WebSocketServer({ port: 43 });
+const wss = new WebSocketServer({ server });
 
 wss.on("connection", (ws) => {
   console.log("Client connected");
