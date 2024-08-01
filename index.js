@@ -32,7 +32,7 @@ connectDatabase();
 //   },
 // ]);
 
-const wss = new WebSocketServer({ server });
+const wss = new WebSocketServer({ port: 8080 });
 
 wss.on("connection", (ws) => {
   console.log("Client connected");
